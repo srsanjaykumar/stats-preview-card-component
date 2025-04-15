@@ -46,16 +46,20 @@ span{
 }
 .section-2{
     max-width: 50%;
+    position: relative;
     max-height: fit-content;
-  
-    background-color: var(--soft-violet);
 }
 .section-2 img{
     max-width: 100%;
+    z-index: 2;
     
-
-    filter: brightness(80%) hue-rotate(270deg) saturate(120%);
-    opacity: 0.9;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(211, 4, 211, 0.486);
 }
 .benefits{
     margin: 35px auto 30px;
