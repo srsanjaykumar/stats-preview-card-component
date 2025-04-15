@@ -48,11 +48,12 @@ span{
     max-width: 50%;
     position: relative;
     max-height: fit-content;
+   
 }
 .section-2 img{
     max-width: 100%;
     z-index: 2;
-    
+    border-radius: 0 15px 15px 0;
 }
 .overlay{
     position: absolute;
@@ -60,6 +61,7 @@ span{
     height: 100%;
     z-index: 1;
     background-color: rgba(211, 4, 211, 0.486);
+    border-radius: 0 15px 15px 0;
 }
 .benefits{
     margin: 35px auto 30px;
@@ -79,4 +81,56 @@ span{
     letter-spacing: 2px;
     margin-top: 7px;
     color: var(--slightly-transparent-white-stats);
+}
+
+
+
+@media (max-width: 850px) {
+    .container{
+        flex-direction: column-reverse;
+        max-width: 330px;
+        max-height: 600px;
+    }
+    h1{
+        font-size: 1.5rem;
+        
+    }
+    .section-1{
+        max-width: 100%;
+        padding: 1rem 1.5rem 0rem 1.5rem;
+        text-align: center;
+        
+    }
+    .section-2{
+        
+        max-width: 100%; 
+        background-size: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    .section-2 img{
+        max-width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    .overlay{
+        max-width: 100%;    
+        border-radius: 15px 15px 0 0;
+    }
+    .information{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        width: 100%;
+    }
+    .information p{
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+.benefits{
+    margin-top:1rem;
+}
 }
