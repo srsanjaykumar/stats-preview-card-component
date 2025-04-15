@@ -1,0 +1,2 @@
+background: linear-gradient(var(--Soft-violet), var(--Dark-desaturated-blue-card-background)), url(./assets/images/image-header-desktop.jpg);
+
